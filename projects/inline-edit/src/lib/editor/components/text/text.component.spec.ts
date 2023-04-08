@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RocketEditComponent } from './rocket-edit.component';
+import { TextComponent } from './text.component';
 
-describe('RocketEditComponent', () => {
-  let component: RocketEditComponent;
-  let fixture: ComponentFixture<RocketEditComponent>;
+describe('TextComponent', () => {
+  let component: TextComponent;
+  let fixture: ComponentFixture<TextComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RocketEditComponent ]
+      declarations: [ TextComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RocketEditComponent);
+    fixture = TestBed.createComponent(TextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
-import { InlineEditComponent } from './inline-edit.component';
-
-
+import { CommonModule } from '@angular/common';
+import { TextComponent } from './editor/components/text/text.component';
+import { FormsModule } from '@angular/forms';
+import { NumberComponent } from './editor/components/number/number.component';
+import { TimeComponent } from './editor/components/time/time.component';
+import { SelectComponent } from './editor/components/select/select.component';
+import { RocketEditComponent } from './inline-edit.component';
 
 @NgModule({
-  declarations: [
-    InlineEditComponent
-  ],
+  declarations: [RocketEditComponent, TextComponent, NumberComponent, TimeComponent, SelectComponent],
   imports: [
+    CommonModule,
+    FormsModule
   ],
-  exports: [
-    InlineEditComponent
-  ]
+  exports: [RocketEditComponent]
 })
-export class InlineEditModule { }
+export class RocketEditModule { }

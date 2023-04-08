@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    background-color: #ededed;
+    font-family: 'Poppins', 'serif';
+}
+
+.container {
+  margin-top: 75px;
+  width: 100%;
+  height: calc(100vh - 135px);
+}
+
+#starme{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-image: linear-gradient(135deg, #b21f66 0%, #ff7315 100%);
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+a:hover{
+  text-decoration: none;
+}
+
+// Navbar begins
+.nav {
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(135deg, #b21f66 0%, #ff7315 100%);
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 13px 10px 12px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 15px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  // .nav > .nav-links > a:hover {
+  //   background-color: rgba(0, 0, 0, 0.3);
+  // }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+// Navbar ends
+
+.rocket {
+    margin: 0 auto 15px;
+    width:200px;
+    height: 200px;
+    align-content: center;
+    text-align: center;
+}
+
+.buttons {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.prod-title {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.prod-desc {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.btn {
+    margin: 2px 10px;
+    border: none;
+    height: 60px;
+    width: 250px;
+    font: 22px 'poppins';
+    background: #001628;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(135deg, #b21f66 0%, #ff7315 100%);
+}
+
+.img-rocket {
+  width:200px;  
+}
+
+.credits {
+  text-align: center;
+}
